@@ -19,7 +19,7 @@ for i = 3 : length(FolderList)
           	cname = uint8(label)- 48;
            endif
            
-           fprintf(fileID, '%s/%s %d', FolderList(i).name,SetList(j).name, cname);
+           fprintf(fileID, '/%s/%s %d', FolderList(i).name,SetList(j).name, cname);
            fprintf(fileID, '\r\n');
        end
 end  
