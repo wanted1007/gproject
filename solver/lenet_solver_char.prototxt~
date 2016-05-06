@@ -21,6 +21,6 @@ display: 100
 max_iter: 4000
 # snapshot intermediate results
 snapshot: 5000
-snapshot_prefix: "examples/gproject/lenet"
+snapshot_prefix: "gproject/solver/lenet_char"
 # solver mode: CPU or GPU
 solver_mode: GPU
