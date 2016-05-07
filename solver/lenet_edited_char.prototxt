@@ -63,15 +63,30 @@ layer {
   }
 }
 layer {
+  bottom: "conv1"
+  top: "bn1"
+  name: "bn1"
+  type: "BatchNorm"
+  param {
+    lr_mult: 0
+  }
+  param {
+    lr_mult: 0
+  }
+  param {
+    lr_mult: 0
+  }
+}
+layer {
   name: "relu1"
   type: "ReLU"
-  bottom: "conv1"
-  top: "conv1"
+  bottom: "bn1"
+  top: "bn1"
 }
 layer {
   name: "pool1"
   type: "Pooling"
-  bottom: "conv1"
+  bottom: "bn1"
   top: "pool1"
   pooling_param {
     pool: MAX
@@ -103,15 +118,30 @@ layer {
   }
 }
 layer {
+  bottom: "conv2"
+  top: "bn2"
+  name: "bn2"
+  type: "BatchNorm"
+  param {
+    lr_mult: 0
+  }
+  param {
+    lr_mult: 0
+  }
+  param {
+    lr_mult: 0
+  }
+}
+layer {
   name: "relu2"
   type: "ReLU"
-  bottom: "conv2"
-  top: "conv2"
+  bottom: "bn2"
+  top: "bn2"
 }
 layer {
   name: "pool2"
   type: "Pooling"
-  bottom: "conv2"
+  bottom: "bn2"
   top: "pool2"
   pooling_param {
     pool: MAX
@@ -143,15 +173,30 @@ layer {
   }
 }
 layer {
+  bottom: "conv3"
+  top: "bn3"
+  name: "bn3"
+  type: "BatchNorm"
+  param {
+    lr_mult: 0
+  }
+  param {
+    lr_mult: 0
+  }
+  param {
+    lr_mult: 0
+  }
+}
+layer {
   name: "relu3"
   type: "ReLU"
-  bottom: "conv3"
-  top: "conv3"
+  bottom: "bn3"
+  top: "bn3"
 }
 layer {
   name: "pool3"
   type: "Pooling"
-  bottom: "conv3"
+  bottom: "bn3"
   top: "pool3"
   pooling_param {
     pool: MAX
