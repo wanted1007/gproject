@@ -23,4 +23,4 @@ max_iter: 7000
 snapshot: 5000
 snapshot_prefix: "gproject/solver/lenet_num"
 # solver mode: CPU or GPU
-solver_mode: CPU
+solver_mode: GPU
