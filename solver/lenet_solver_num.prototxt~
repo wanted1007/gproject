@@ -18,9 +18,9 @@ power: 0.75
 display: 100
 # The maximum number of iterations
 # base iter 10000
-max_iter: 7000
+max_iter: 5000
 # snapshot intermediate results
 snapshot: 5000
 snapshot_prefix: "gproject/solver/lenet_num"
 # solver mode: CPU or GPU
-solver_mode: CPU
+solver_mode: GPU
