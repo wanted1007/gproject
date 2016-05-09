@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
 
-./build/tools/caffe train --solver=examples/mnist/lenet_solver_num.prototxt
+./build/tools/caffe train --solver=gproject/solver/lenet_solver_num.prototxt
