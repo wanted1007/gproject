@@ -2,7 +2,7 @@
 # Create the imagenet lmdb inputs
 # N.B. set the path to the imagenet train + val data dirs
 
-EXAMPLE=gproject/data
+EXAMPLE=gproject/data/lmdb
 DATA=gproject/data
 TOOLS=build/tools
 
