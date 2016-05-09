@@ -14,7 +14,7 @@ layer {
     scale: 0.00390625
   }
   data_param {
-    source: "gproject/data/Char_train_lmdb"
+    source: "gproject/data/lmdb/Char_train_lmdb"
     batch_size: 32
     backend: LMDB
   }
