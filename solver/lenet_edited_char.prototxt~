@@ -143,30 +143,15 @@ layer {
   }
 }
 layer {
-  bottom: "conv3"
-  top: "bn3"
-  name: "bn3"
-  type: "BatchNorm"
-  param {
-    lr_mult: 0
-  }
-  param {
-    lr_mult: 0
-  }
-  param {
-    lr_mult: 0
-  }
-}
-layer {
   name: "relu3"
   type: "ReLU"
-  bottom: "bn3"
-  top: "bn3"
+  bottom: "conv3"
+  top: "conv3"
 }
 layer {
   name: "pool3"
   type: "Pooling"
-  bottom: "bn3"
+  bottom: "conv3"
   top: "pool3"
   pooling_param {
     pool: MAX
