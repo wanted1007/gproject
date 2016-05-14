@@ -1,0 +1,3 @@
+number of total images: 112108
+number of white images: 15516
+proportion: 0.138
