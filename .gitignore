@@ -1,3 +1,4 @@
 data/lmdb/
 *~
 *bmp
+!data/finalTestSet/*
